@@ -1,3 +1,5 @@
-# kommercy
+#  next-js-react-boilerplate
 
-kommercy
+
+ next-js-react-boilerplate
+
