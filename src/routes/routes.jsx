@@ -1,6 +1,7 @@
 
 const Routes = {
-    pages: '/pages'
+    pages: '/pages',
+    sample: '/pages/sample'
   };
   
   export default Routes;
