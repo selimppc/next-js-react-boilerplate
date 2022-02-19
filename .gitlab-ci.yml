@@ -1,0 +1,32 @@
+image: node:latest
+
+# stages
+stages:
+  - lint
+  - test
+  - build
+  - stage
+  - deploy
+  - production
+
+# caching for reuse
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+  - node_modules/
+  - build/
+
+before_script:
+  - npm install --legacy-peer-deps
+  
+# #lint 
+lint:
+  stage: lint  
+  script:
+    - npm run lint
+
+# #test 
+test:
+  stage: test  
+  script:
+    - echo "NO TEST RIGHT NOW"
